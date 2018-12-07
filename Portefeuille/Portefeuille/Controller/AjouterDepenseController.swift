@@ -25,6 +25,7 @@ class AjouterDepenseController: UIViewController, UITextFieldDelegate, UIPickerV
     @IBOutlet weak var CategoryInputField: UITextField!
     private var categoryPicker: UIPickerView?
     var category = ["Nourriture", "Sport", "Santé"]
+    var categories: [Categories]!
 /////////////////////////////////////////////////////////////////////////////// Category // END
     
 /////////////////////////////////////////////////////////////////////////////// Description
@@ -63,6 +64,13 @@ class AjouterDepenseController: UIViewController, UITextFieldDelegate, UIPickerV
         
         CategoryInputField.inputView = categoryPicker
         /////////////////////////////////////////////////////////////////////////////// Category // END
+    }
+    
+    func loadData(){
+        categories = [Categories]()
+        categories = DataManager.loadAll(Categories.self).sorted(by: {
+            $0.createdAt < $1.createdAt
+        })
     }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer){

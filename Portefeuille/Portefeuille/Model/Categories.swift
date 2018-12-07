@@ -7,24 +7,22 @@
 //
 
 import Foundation
-class Categories
-{
-    private var categories = [Categorie]()
+struct Categories: Codable {
     
-    public func addCategorie(nom:String)
-    {
-       categories.append(Categorie(Nom: nom))
+    var title: String
+    var createdAt: Date
+    var itemIdentifier: UUID
+    
+    func saveItem(){
+        DataManager.save(self, with: itemIdentifier.uuidString)
     }
     
-    public func voirCategories()
-    {
-        for x in 0...categories.count{
-            print(categories[x].getNom())
-        }
+    func deleteItem(){
+        DataManager.delete(itemIdentifier.uuidString)
     }
     
-    public func getArray()->[Categorie]
-    {
-        return self.categories
+    func getTitle()->String{
+        return self.title
     }
+    
 }
