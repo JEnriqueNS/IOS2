@@ -13,9 +13,7 @@ class MissionTableViewController: UITableViewController, MissionCellDelegate {
         
     }
     
-    
     var missions:[MissionItem]!
-    var depenses:[Depense]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +27,7 @@ class MissionTableViewController: UITableViewController, MissionCellDelegate {
             $0.createdAt < $1.createdAt
         })
         tableView.reloadData()
+        
     }
     
     
@@ -56,6 +55,8 @@ class MissionTableViewController: UITableViewController, MissionCellDelegate {
         
         self.present(addAlert, animated: true, completion: nil)
     }
+    
+    
     
     func didRequestDelete(_ cell: MissionTableViewCell) {
         if let indexPath = tableView.indexPath(for: cell){
@@ -97,6 +98,7 @@ class MissionTableViewController: UITableViewController, MissionCellDelegate {
         cell.missionLabel.text = missionItem.title
         
         return cell
+        
     }
     
 

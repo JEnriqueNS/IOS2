@@ -91,7 +91,7 @@ public class DataManager{
         
         if FileManager.default.fileExists(atPath: url.path){
             do{
-                try FileManager.default.fileExists(atPath: url.path)
+                try FileManager.default.removeItem(at: url)
             }catch{
                 fatalError(error.localizedDescription)
             }

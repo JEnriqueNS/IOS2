@@ -10,9 +10,6 @@
 		57AC7CE721B51CFF003DF9AF /* AjouterDepenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC7CE621B51CFF003DF9AF /* AjouterDepenseController.swift */; };
 		57AC7CE921B54439003DF9AF /* Devise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC7CE821B54439003DF9AF /* Devise.swift */; };
 		57AC7CEB21B5685C003DF9AF /* AjouterCategorieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC7CEA21B5685C003DF9AF /* AjouterCategorieController.swift */; };
-		738A040721BA5EBC0036768C /* Depense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A040621BA5EBC0036768C /* Depense.swift */; };
-		738A040921BA62000036768C /* DepenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A040821BA62000036768C /* DepenseTableViewCell.swift */; };
-		738A040B21BA62290036768C /* DepenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A040A21BA62290036768C /* DepenseTableViewController.swift */; };
 		73A000AA21B1575F000CE324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A000A921B1575F000CE324 /* AppDelegate.swift */; };
 		73A000AC21B1575F000CE324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A000AB21B1575F000CE324 /* ViewController.swift */; };
 		73A000AF21B1575F000CE324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A000AD21B1575F000CE324 /* Main.storyboard */; };
@@ -50,9 +47,6 @@
 		57AC7CE621B51CFF003DF9AF /* AjouterDepenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjouterDepenseController.swift; sourceTree = "<group>"; };
 		57AC7CE821B54439003DF9AF /* Devise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devise.swift; sourceTree = "<group>"; };
 		57AC7CEA21B5685C003DF9AF /* AjouterCategorieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjouterCategorieController.swift; sourceTree = "<group>"; };
-		738A040621BA5EBC0036768C /* Depense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depense.swift; sourceTree = "<group>"; };
-		738A040821BA62000036768C /* DepenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenseTableViewCell.swift; sourceTree = "<group>"; };
-		738A040A21BA62290036768C /* DepenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenseTableViewController.swift; sourceTree = "<group>"; };
 		73A000A621B1575F000CE324 /* Portefeuille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portefeuille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A000A921B1575F000CE324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73A000AB21B1575F000CE324 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,12 +150,7 @@
 				73A000E121B15D13000CE324 /* Categories.swift */,
 				57AC7CE821B54439003DF9AF /* Devise.swift */,
 				73E07D9721B905470096C28F /* MissionItem.swift */,
-				738A040621BA5EBC0036768C /* Depense.swift */,
 				73E07D9921B905B80096C28F /* DataManager.swift */,
-				73E07D9B21B9067C0096C28F /* MissionTableViewController.swift */,
-				73D65C9521B9448E00CC5BC5 /* MissionTableViewCell.swift */,
-				738A040821BA62000036768C /* DepenseTableViewCell.swift */,
-				738A040A21BA62290036768C /* DepenseTableViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +158,8 @@
 		73A000D821B1584F000CE324 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73D65C9521B9448E00CC5BC5 /* MissionTableViewCell.swift */,
+				73E07D9B21B9067C0096C28F /* MissionTableViewController.swift */,
 				73A000AB21B1575F000CE324 /* ViewController.swift */,
 				57AC7CE621B51CFF003DF9AF /* AjouterDepenseController.swift */,
 				57AC7CEA21B5685C003DF9AF /* AjouterCategorieController.swift */,
@@ -327,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				738A040721BA5EBC0036768C /* Depense.swift in Sources */,
 				57AC7CEB21B5685C003DF9AF /* AjouterCategorieController.swift in Sources */,
 				73E07D9A21B905B80096C28F /* DataManager.swift in Sources */,
 				73A000AC21B1575F000CE324 /* ViewController.swift in Sources */,
@@ -337,8 +327,6 @@
 				73E07D9C21B9067C0096C28F /* MissionTableViewController.swift in Sources */,
 				73A000DE21B15A8B000CE324 /* Categorie.swift in Sources */,
 				57AC7CE921B54439003DF9AF /* Devise.swift in Sources */,
-				738A040921BA62000036768C /* DepenseTableViewCell.swift in Sources */,
-				738A040B21BA62290036768C /* DepenseTableViewController.swift in Sources */,
 				73E07D9821B905470096C28F /* MissionItem.swift in Sources */,
 				73D65C9621B9448E00CC5BC5 /* MissionTableViewCell.swift in Sources */,
 				73A000AA21B1575F000CE324 /* AppDelegate.swift in Sources */,
